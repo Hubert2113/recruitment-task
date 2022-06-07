@@ -13,6 +13,7 @@ export const FormSection = ({inputValue, handleChange, handleSubmit}) => {
           value={inputValue}
           onChange={handleChange}
           placeholder='Search product'
+          type='number'
           required
         />
         <SubmitBtn type='submit'><SearchIcon/></SubmitBtn>

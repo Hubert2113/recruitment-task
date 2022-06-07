@@ -20,6 +20,11 @@ export const SeachInput = styled.input`
     &:focus{
         outline: none;
     }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+    }
 `;
 
 export const SubmitBtn = styled.button`
@@ -32,4 +37,9 @@ export const SubmitBtn = styled.button`
 
 export const SearchIcon = styled(SearchAlt)`
     width: 20px;
+    transition: transform 100ms linear;
+
+    &:active{
+        transform: scale(0.8);
+    }
 `;
